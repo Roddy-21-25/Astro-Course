@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const hobbies = ["programar", "leer", "escribir", "ver peliculas"];
+---
+
+<Layout title="Services">
+  <h1>Servicis</h1>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, cumque!</p>
+  <ul>
+    {hobbies.map((hobby) => <li>{hobby}</li>)}
+  </ul>
+</Layout>
